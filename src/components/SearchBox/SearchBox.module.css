@@ -1,0 +1,16 @@
+.searchBox {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 4px;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .searchBoxInput {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
