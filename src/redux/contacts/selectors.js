@@ -1,5 +1,5 @@
 import { createSelector } from "@reduxjs/toolkit";
-import { selectFilters } from "../filter/selectors";
+import { selectFilters } from "../filters/selectors";
 import Fuse from "fuse.js";
 
 const selectContacts = (state) => state.contacts.items;
