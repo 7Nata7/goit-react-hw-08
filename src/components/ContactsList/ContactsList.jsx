@@ -8,7 +8,7 @@ export default function ContactsList() {
   return (
     <ul className={css.contactsList}>
       {filteredContacts.map((contact) => (
-        <li key={contact._id} className={css.contactsItem}>
+        <li key={contact.id} className={css.contactsItem}>
           <Contact contact={contact} />
         </li>
       ))}

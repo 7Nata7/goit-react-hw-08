@@ -5,10 +5,10 @@ import ReactModal from "react-modal";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contacts/operations";
 
-export default function DeleteModal({ _id }) {
+export default function DeleteModal({ id }) {
   ReactModal.setAppElement("#root");
   const dispatch = useDispatch();
-  const handleDelete = () => dispatch(deleteContact(_id));
+  const handleDelete = () => dispatch(deleteContact(id));
 
   const customStyles = {
     content: {

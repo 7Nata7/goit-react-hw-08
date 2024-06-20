@@ -4,7 +4,7 @@ import { IoMdPerson } from "react-icons/io";
 import DeleteModal from "../DeleteModal/DeleteModal";
 import EditModal from "../EditModal/EditModal";
 
-export default function Contact({ contact: { _id, name, number } }) {
+export default function Contact({ contact: { id, name, number } }) {
   return (
     <div className={css.contactItem}>
       <div className={css.contactInfo}>
@@ -18,8 +18,8 @@ export default function Contact({ contact: { _id, name, number } }) {
         </p>
       </div>
       <div className={css.contactBtns}>
-        <EditModal _id={_id} name={name} number={number} />
-        <DeleteModal _id={_id} />
+        <EditModal id={id} name={name} number={number} />
+        <DeleteModal id={id} />
       </div>
     </div>
   );
